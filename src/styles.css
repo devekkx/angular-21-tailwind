@@ -1,3 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import 'tailwindcss';
+
+/* SortableJS drag states */
+.sortable-ghost {
+  opacity: 0.35;
+  border-radius: 0.75rem;
+  background: theme(colors.violet.100);
+}
+
+.sortable-chosen {
+  box-shadow:
+    0 10px 25px -5px rgb(139 92 246 / 0.25),
+    0 4px 10px -3px rgb(139 92 246 / 0.15);
+}
+
+.sortable-drag {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+  .sortable-ghost {
+    background: theme(colors.violet.900 / 30%);
+  }
+}
