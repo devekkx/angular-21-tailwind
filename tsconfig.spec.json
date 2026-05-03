@@ -3,7 +3,11 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "outDir": "./out-tsc/spec",
+    "rootDir": "./src",
+    "forceConsistentCasingInFileNames": true,
     "types": [
       "vitest/globals"
     ]
